@@ -128,16 +128,16 @@
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
-                  <script type="text/javascript"> 
+                  <script type="text/javascript">
                   function socialsClicked(event) {
-  event.preventDefault();
-  var link = event.currentTarget.getAttribute('href');
-  var location = event.currentTarget.getAttribute('target');
-  analytics.track('Clicked Socials', {
-    link: link,
-    location: location
-  });
-}
+                    event.preventDefault();
+                    var link = document.querySelector('a[target="github-link"]').getAttribute('href');
+                    var location = document.querySelector('a[target="github-link"]').getAttribute('target');
+                    analytics.track('Clicked Socials', {
+            link: link,
+            location: location
+          });
+        }
                   </script>
                 </span>
 
@@ -150,14 +150,14 @@
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                   <script type="text/javascript">
                   function socialsClicked(event) {
-  event.preventDefault();
-  var link = event.currentTarget.getAttribute('href');
-  var location = event.currentTarget.getAttribute('target');
-  analytics.track('Clicked Socials', {
-    link: link,
-    location: location
-  });
-}
+                    event.preventDefault();
+                    var link = document.querySelector('a[target="github-link"]').getAttribute('href');
+                    var location = document.querySelector('a[target="github-link"]').getAttribute('target');
+                    analytics.track('Clicked Socials', {
+            link: link,
+            location: location
+          });
+        }
     </script>
                 </span>
               </a>
