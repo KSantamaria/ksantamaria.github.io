@@ -59,7 +59,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
 
-        <ul class="navbar-nav">
+        <ul class="navbar-nav" onclick="onClickNavigation">
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -86,11 +86,6 @@
         <li class="nav-item">
           <a class="nav-link js-scroll-trigger" href="Current Resume Kyle PDF.pdf" target="_blank">Resume</a>
         </li>
-
-        <script> analytics.track("Clicked Navigation", {
-            Navbutton:"class",
-                    });
-</script>
         </ul>
 
       </div>
@@ -395,6 +390,12 @@
 
     </div>
 
+    <script> function onClickNavigation (){
+      analytics.track("Clicked Navigation", {
+                  Navbutton:"class",
+                          });
+    }
+    </script>
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
