@@ -106,8 +106,8 @@
           </div>
           <p class="mb-5">I am an Industrial Engineer looking to help design and improve processes, products, and applications with the help of business intelligence tools and big data analysis. I strive to be a better analyst everyday with the hope to make a difference for companies and products millons of people enjoy everyday.
  </p>
-          <ul class="list-inline list-social-icons mb-">
-            <li class="list-inline-item">
+          <ul class="list-inline list-social-icons mb-" >
+            <li class="list-inline-item" onclick="socialsClicked">
               <a href="https://www.facebook.com/ksantamaria1"target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -115,7 +115,7 @@
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" onclick="socialsClicked">
               <a href="https://twitter.com/K_Santamaria_"target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -123,15 +123,16 @@
                 </span>
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item" onclick="socialsClicked">
               <a href="https://www.linkedin.com/in/kyle-santamaria/"target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
                 </span>
+
               </a>
             </li>
-            <li class="list-inline-item">
+            <li class="list-inline-item"onclick="socialsClicked">
               <a href="https://github.com/KSantamaria"target="_blank">
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
@@ -140,6 +141,13 @@
               </a>
             </li>
           </ul>
+          <script>  function socialsClicked() {
+                analytics.track("Clicked Socials", {
+                        Navbutton: 'target',
+                      });
+                    }
+
+          </script>
         </div>
       </section>
 
