@@ -138,12 +138,13 @@
               </a>
             </li>
             <li class="list-inline-item">
-              <a href="https://github.com/KSantamaria" id= "github-link" onclick = 'socialsClicked' >
+              <a href="https://github.com/KSantamaria" target= "github-link" onclick = 'socialsClicked' >
                 <span class="fa-stack fa-lg">
                   <i class="fa fa-circle fa-stack-2x"></i>
                   <i class="fa fa-github fa-stack-1x fa-inverse"></i>
                   <script type="text/javascript"> function socialsClicked() { analytics.track("Clicked Socials", {
-                          Link: document.getElementById("github-link").getAttribute("href"); ,
+                          Link: document.getAttribute("href");
+                          location: document.getAttribute("target") ,
                         })}
                   </script>
                 </span>
