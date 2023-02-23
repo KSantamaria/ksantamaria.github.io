@@ -59,7 +59,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent" >
 
-        <ul class="navbar-nav" onclick="trackNavigationSidebar">
+        <ul class="navbar-nav">
 
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
@@ -87,11 +87,10 @@
           <a class="nav-link js-scroll-trigger" href="Current Resume Kyle PDF.pdf" target="_blank">Resume</a>
         </li>
 
-        <script>
-        function trackNavigationSidebar() {
-          analytics.track "Clicked Nav Sidebar", {
-          }};
-          </script>
+        <script> analytics.track("Clicked Navigation", {
+            Navbutton:"class",
+                    });
+</script>
         </ul>
 
       </div>
