@@ -46,20 +46,26 @@
   <body id="page-top">
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-	    
+
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Jump To...</span>
         <span class="d-none d-lg-block">
           <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
         </span>
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="trackNavigationSidebar">
         <span class="navbar-toggler-icon"></span>
       </button>
+      <script>
+
+      function trackNavigationSidebar() {
+        analytics.track"Clicked Nav Sidebar", {
+        }};
+
+        </script>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav">
-		 <script> analytics.track("Clicked Nav Sidebar", {
-		    }); </script>
+
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#about">About</a>
           </li>
@@ -101,7 +107,7 @@
             <div> Tableau Desktop Certified Professional </div>
               <div> Tableau Server Qualified Associate </div>
           </div>
-          <p class="mb-5">I am an Industrial Engineer looking to help design and improve processes, products, and applications with the help of business intelligence tools and big data analysis. I strive to be a better analyst everyday with the hope to make a difference for companies and products millons of people enjoy everyday.    
+          <p class="mb-5">I am an Industrial Engineer looking to help design and improve processes, products, and applications with the help of business intelligence tools and big data analysis. I strive to be a better analyst everyday with the hope to make a difference for companies and products millons of people enjoy everyday.
  </p>
           <ul class="list-inline list-social-icons mb-">
             <li class="list-inline-item">
@@ -173,7 +179,7 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
         <div class="my-auto">
           <h2 class="mb-5">Technical Experience</h2>
-			
+
 			<div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Associate Analytics Consultant</h3>
@@ -183,14 +189,14 @@
               <ul>
                 <li><a href="https://public.tableau.com/profile/tableau.services.delivery.cv#!/vizhome/KyleSantamaria/CV"target="_blank">Personal CV</a></li>
                 <li><a href="https://www.tableau.com/services"target="_blank">Team Services</a></li>
-                
+
               </ul>
             </div>
             <div class="resume-date text-md-right">
               <span class="text-primary">August 2019 - Present</span>
             </div>
           </div>
-		  
+
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Product Consultant</h3>
